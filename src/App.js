@@ -35,7 +35,7 @@ function App() {
       />
       <button onClick={() => setSearchCity(city)}  style={{width:"150px",backgroundColor:"#998d8dff",border:"none",borderRadius:"5px"}}>Search</button>
       </div>
-      {loading && <p>Loading...</p>}
+      {loading && <p>Loading data...</p>}
       {data.location && !loading && (
         <div style={{display:"flex",gap:"60px"}} className='weather-cards'>
           <div className='weather-card' style={{backgroundColor:"white",height:"150px",width:"200px",borderRadius:"20px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
